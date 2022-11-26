@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch AccountManagementApplication",
+      "request": "launch",
+      "mainClass": "com.loiane.accountmanagement.AccountManagementApplication",
+      "projectName": "account-management"
+    },
+    {
+      "type": "java",
       "name": "Launch UserServiceApplication",
       "request": "launch",
       "mainClass": "com.loiane.userservice.UserServiceApplication"
