@@ -2,11 +2,28 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch UserServiceApplication",
+      "request": "launch",
+      "mainClass": "com.loiane.userservice.UserServiceApplication"
+    },
+    {
+      "type": "java",
       "name": "Spring Boot-DiscoveryServiceApplication<discovery-service>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "mainClass": "com.loiane.discoveryservice.DiscoveryServiceApplication",
       "projectName": "discovery-service",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=52820 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=discovery-service"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-UserServiceApplication<user-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.loiane.userservice.UserServiceApplication",
+      "projectName": "user-service",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
